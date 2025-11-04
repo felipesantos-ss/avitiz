@@ -27,12 +27,10 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="inline-block">
-                <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full">
-                  Assistência Técnica Especializada 24/7
-                </span>
+                
               </div>
               <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-                Sua Solução Completa em Tecnologia. <span className="text-primary">Performance e Confiança Garantidas.</span>
+                Sua Solução Completa em Tecnologia. <span className="text-primary"></span>
               </h2>
               <p className="text-muted-foreground text-lg">Assistência técnica especializada para PCs, Notebooks e Consoles. De upgrades a recuperação de dados, temos a expertise que você precisa.</p>
               <div className="flex flex-wrap gap-4">
