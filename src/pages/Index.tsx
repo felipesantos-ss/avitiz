@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Laptop, Wrench, Zap, ShieldCheck, Award, Search, MessageCircle, ClipboardList, Settings, Package, MapPin, Phone, Clock, Star, Monitor, TrendingUp, Droplets, Database, HardDrive } from "lucide-react";
+import { Laptop, Gamepad2, Wrench, Zap, ShieldCheck, Award, Search, MessageCircle, ClipboardList, Settings, Package, MapPin, Phone, Mail, Clock, Star } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -26,19 +26,18 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <div className="inline-block">
-                
-              </div>
+              
               <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-                Sua Solução Completa em Tecnologia. <span className="text-primary"></span>
+                Seu equipamento de volta ao <span className="text-primary">Tecnologia</span>
               </h2>
-              <p className="text-muted-foreground text-lg">Assistência técnica especializada para PCs, Notebooks e Consoles. De upgrades a recuperação de dados, temos a expertise que você precisa.</p>
+              <p className="text-muted-foreground text-lg">Soluções para PCs, Notebooks e Consoles. 
+De upgrades a recuperação de dados, temos a expertise que você precisa.</p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" variant="hero" className="gap-2">
                   <Phone className="w-5 h-5" />
-                  Solicite Seu Orçamento Gratuito
+                  Solicitar Orçamento
                 </Button>
-                <Button size="lg" variant="outline">Conheça Nossos Serviços</Button>
+                <Button size="lg" variant="outline">Ver Serviços</Button>
               </div>
             </div>
             <div className="relative animate-slide-up">
@@ -60,33 +59,25 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">
-              Nossos <span className="text-primary">Serviços</span>
+              Nossas <span className="text-primary">Especialidades</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Soluções tecnológicas completas e profissionais para manter seus equipamentos no auge.
+              Soluções completas para todos os seus equipamentos tecnológicos
             </p>
           </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[{
-            icon: Monitor,
-            title: "Montagem e Manutenção Profissional",
-            description: "Desde a montagem de PCs personalizados de alta performance até a manutenção corretiva e preventiva de seu desktop ou notebook. Garantimos o funcionamento ideal do seu equipamento."
+            icon: Laptop,
+            title: "PC & Notebook",
+            description: "Reparo de hardware, atualização de performance, remoção de vírus e muito mais. Deixe seu equipamento rápido e seguro."
           }, {
-            icon: TrendingUp,
-            title: "Upgrade de Performance",
-            description: "Aumente a vida útil e a velocidade do seu equipamento. Realizamos upgrades de hardware (memória RAM, SSD, placa de vídeo) e otimizações de software para o máximo desempenho."
+            icon: Gamepad2,
+            title: "Consoles",
+            description: "PlayStation, Xbox, Nintendo Switch. Reparo de placas, lentes e manutenção preventiva para maior vida útil."
           }, {
-            icon: Droplets,
-            title: "Limpeza Técnica Detalhada",
-            description: "Remoção de poeira, troca de pasta térmica de alta qualidade e higienização completa para prevenir superaquecimento e prolongar a durabilidade dos componentes."
-          }, {
-            icon: Database,
-            title: "Estratégias de Backup Seguras",
-            description: "Implementação de rotinas de backup eficientes e seguras para proteger seus arquivos mais importantes contra perdas inesperadas."
-          }, {
-            icon: HardDrive,
-            title: "Recuperação de Dados Críticos",
-            description: "Serviço especializado para recuperar dados perdidos ou inacessíveis em HDs, SSDs, pendrives e outros dispositivos de armazenamento danificados."
+            icon: Wrench,
+            title: "Manutenção Preventiva",
+            description: "Limpeza interna, troca de pasta térmica, atualização de drivers e sistemas para melhor performance."
           }].map((service, index) => <Card key={index} className="p-6 bg-card border-border hover:bg-card/80 hover:border-primary/50 transition-all hover:shadow-glow group">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
@@ -103,29 +94,26 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Por Que a Avitiz é a <span className="text-primary">Escolha Certa?</span>
+              Por Que Escolher a <span className="text-primary">Avitiz?</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Compromisso com a excelência, transparência e a sua tranquilidade.
-            </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[{
             icon: Zap,
-            title: "Diagnóstico Rápido e Preciso",
-            description: "Diagnóstico rápido e preciso da reparação. Em minutos você já tem o orçamento completo."
+            title: "Agilidade",
+            description: "Diagnóstico rápido e preciso de reparação, com prazos 24h você já tem o equipamento completo."
           }, {
             icon: ShieldCheck,
-            title: "Garantia de Qualidade",
-            description: "Oferecemos 90 dias de garantia em todos os serviços e peças utilizadas. Sua tranquilidade é a nossa prioridade."
+            title: "Garantia",
+            description: "90 dias de garantia em todos os serviços, tranquilidade e confiança em cada reparo."
           }, {
             icon: Award,
-            title: "Equipe Especializada",
-            description: "Nossos técnicos são certificados e possuem expertise em diversas plataformas e marcas, garantindo um serviço de alto padrão."
+            title: "Técnicos Certificados",
+            description: "Equipe especializada e certificada. Expertise em todas as plataformas e marcas."
           }, {
             icon: Search,
-            title: "Acompanhamento Online",
-            description: "Acompanhe o status do seu reparo em tempo real através de nossa plataforma. Você sempre saberá o que está acontecendo com seu equipamento."
+            title: "Transparência",
+            description: "Acompanhamento do status do reparo online. Você está sempre informado."
           }].map((benefit, index) => <div key={index} className="text-center group">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 group-hover:shadow-glow transition-all">
                   <benefit.icon className="w-8 h-8 text-primary" />
@@ -142,32 +130,29 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Seu Caminho para a Solução em <span className="text-primary">4 Passos</span>
+              Como Funciona o <span className="text-primary">Atendimento</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Simples, rápido e totalmente transparente.
-            </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[{
             icon: MessageCircle,
-            title: "Inicie o Atendimento",
-            description: "Entre em contato conosco via WhatsApp ou preencha o formulário em nosso site. Descreva o problema e agende a entrega do seu equipamento.",
+            title: "Contato",
+            description: "Você nos envia uma mensagem via WhatsApp ou formulário de contato.",
             step: "1"
           }, {
             icon: ClipboardList,
-            title: "Análise e Proposta",
-            description: "Realizamos uma análise técnica detalhada e enviamos um orçamento claro, com custo e prazo estimados para sua aprovação.",
+            title: "Orçamento",
+            description: "Avaliamos o problema e enviamos o orçamento e prazo estimado.",
             step: "2"
           }, {
             icon: Settings,
-            title: "Execução do Serviço",
-            description: "Após a sua aprovação, nossos técnicos realizam o serviço com o máximo de cuidado e utilizando peças de qualidade.",
+            title: "Reparo",
+            description: "Nossos técnicos realizam o serviço com resultados e cuidado.",
             step: "3"
           }, {
             icon: Package,
-            title: "Teste e Devolução",
-            description: "Seu equipamento é testado rigorosamente para garantir o perfeito funcionamento e é devolvido pronto para uso.",
+            title: "Entrega",
+            description: "Equipamento testado, funcionando perfeitamente e pronto para uso.",
             step: "4"
           }].map((step, index) => <Card key={index} className="p-6 bg-card border-border relative overflow-hidden group hover:border-primary/50 transition-all">
                 <div className="absolute top-4 right-4 text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors">
@@ -191,11 +176,14 @@ const Index = () => {
               <h2 className="text-4xl font-bold">
                 Nossa <span className="text-primary">Missão</span>
               </h2>
-              <p className="text-muted-foreground text-lg italic">
-                Tecnologia a serviço da sua vida.
+              <p className="text-muted-foreground text-lg">
+                Nosso objetivo é oferecer um serviço de assistência técnica confiável, acessível e de alta qualidade.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Nosso objetivo é ser o seu parceiro de confiança em soluções tecnológicas. Dedicamos-nos a oferecer um serviço de assistência técnica rápido, transparente e de alta qualidade, garantindo que você tenha o melhor desempenho e a maior durabilidade de seus equipamentos. Mais do que um serviço de reparo, somos a extensão da sua tranquilidade no mundo digital.
+              <p className="text-muted-foreground">
+                Dedicamos a oferecer um serviço rápido e transparente, com qualidade e garantia.
+              </p>
+              <p className="text-muted-foreground">
+                Mais que um serviço de reparo: somos seus parceiros, sempre prontos para ajudar.
               </p>
             </div>
             <div className="flex justify-center">
@@ -216,9 +204,6 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4">
               Fale <span className="text-primary">Conosco</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Estamos prontos para ajudar. Entre em contato e tire suas dúvidas.
-            </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div className="space-y-6">
@@ -277,8 +262,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground text-sm">
-          <p>© 2025 <span className="text-primary font-semibold">Avitiz</span> - Soluções em Tecnologia. Todos os direitos reservados.</p>
-          <p className="mt-2">Desenvolvido com 💚 para sua tecnologia</p>
+          <p>© 2025 <span className="text-primary font-semibold">Avitiz</span> - Assistência Técnica em Informática. Todos os direitos reservados.</p>
+          <p className="mt-2">Desenvolvido com ❤️ para sua tecnologia</p>
         </div>
       </footer>
 
