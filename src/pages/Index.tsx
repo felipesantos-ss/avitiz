@@ -24,31 +24,18 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6 animate-fade-in">
-              <div className="inline-block">
-                
-              </div>
               <h2 className="text-5xl md:text-6xl font-bold leading-tight">
                 Sua Solução Completa em Tecnologia. <span className="text-primary"></span>
               </h2>
               <p className="text-muted-foreground text-lg">Assistência técnica especializada para PCs, Notebooks e Consoles. De upgrades a recuperação de dados, temos a expertise que você precisa.</p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="hero" className="gap-2">
                   <Phone className="w-5 h-5" />
                   Solicite Seu Orçamento Gratuito
                 </Button>
                 <Button size="lg" variant="outline">Conheça Nossos Serviços</Button>
-              </div>
-            </div>
-            <div className="relative animate-slide-up">
-              <div className="relative rounded-2xl overflow-hidden border border-border shadow-glow-lg">
-                <div className="aspect-[4/3] bg-gradient-to-br from-card to-secondary flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Laptop className="w-24 h-24 text-primary mx-auto mb-4" />
-                    <p className="text-muted-foreground">Especialistas em Reparo Tech</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
