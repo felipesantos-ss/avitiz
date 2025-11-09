@@ -35,9 +35,8 @@ const Index = () => {
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" variant="hero" className="gap-2">
                   <Phone className="w-5 h-5" />
-                  Solicite Seu Orçamento Gratuito
+                  Solicitar Orçamento
                 </Button>
-                <Button size="lg" variant="outline">Conheça Nossos Serviços</Button>
               </div>
             </div>
           </div>
