@@ -3,14 +3,16 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Laptop, Wrench, Zap, ShieldCheck, Award, Search, MessageCircle, ClipboardList, Settings, Package, MapPin, Phone, Clock, Star, Monitor, TrendingUp, Droplets, Database, HardDrive } from "lucide-react";
+import logoAvitiz from "@/assets/logo-avitiz.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold">
-            Avitiz<span className="text-primary">.</span>
-          </h1>
+          <div className="flex items-center gap-3">
+            <img src={logoAvitiz} alt="Avitiz Logo" className="h-10 w-10" />
+            <h1 className="text-2xl font-bold">Avitiz</h1>
+          </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#servicos" className="text-foreground/80 hover:text-primary transition-colors">Serviços</a>
             <a href="#diferenciais" className="text-foreground/80 hover:text-primary transition-colors">Diferenciais</a>
