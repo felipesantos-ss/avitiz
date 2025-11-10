@@ -4,6 +4,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Laptop, Wrench, Zap, ShieldCheck, Award, Search, MessageCircle, ClipboardList, Settings, Package, MapPin, Phone, Clock, Star, Monitor, TrendingUp, Droplets, Database, HardDrive } from "lucide-react";
 import logoAvitiz from "@/assets/logo-avitiz.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import servicoFormatacao from "@/assets/servico-formatacao.jpg";
+import servicoPs4 from "@/assets/servico-ps4.jpg";
+import servicoManutencao from "@/assets/servico-manutencao.jpg";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -39,6 +49,55 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Carousel Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-4">
+              Nossos <span className="text-primary">Serviços</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Confira alguns dos nossos trabalhos
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                    <img 
+                      src={servicoFormatacao} 
+                      alt="Formatação e Limpeza de Notebook" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                    <img 
+                      src={servicoPs4} 
+                      alt="Limpeza e Troca de Pasta Térmica em PS4" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                    <img 
+                      src={servicoManutencao} 
+                      alt="Manutenção Preventiva em PC Gamer" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
           </div>
         </div>
       </section>
