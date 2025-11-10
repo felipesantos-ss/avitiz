@@ -68,29 +68,29 @@ const Index = () => {
             <Carousel className="w-full">
               <CarouselContent>
                 <CarouselItem>
-                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <div className="flex justify-center items-center bg-secondary/30 rounded-lg p-4">
                     <img 
                       src={servicoFormatacao} 
                       alt="Formatação e Limpeza de Notebook" 
-                      className="w-full h-full object-cover"
+                      className="max-w-full h-auto rounded-lg"
                     />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <div className="flex justify-center items-center bg-secondary/30 rounded-lg p-4">
                     <img 
                       src={servicoPs4} 
                       alt="Limpeza e Troca de Pasta Térmica em PS4" 
-                      className="w-full h-full object-cover"
+                      className="max-w-full h-auto rounded-lg"
                     />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="relative aspect-video rounded-lg overflow-hidden">
+                  <div className="flex justify-center items-center bg-secondary/30 rounded-lg p-4">
                     <img 
                       src={servicoManutencao} 
                       alt="Manutenção Preventiva em PC Gamer" 
-                      className="w-full h-full object-cover"
+                      className="max-w-full h-auto rounded-lg"
                     />
                   </div>
                 </CarouselItem>
